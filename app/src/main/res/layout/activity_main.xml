@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/xml/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <EditText
+        android:id="@+id/cookie_input"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Paste FB Cookies Here (Format: datr=...; c_user=...;)"
+        android:gravity="top"
+        android:padding="10dp"
+        android:background="#F5F5F5"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inject Cookies &amp; Login"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1877F2"
+        android:textColor="#FFFFFF" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
